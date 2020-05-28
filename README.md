@@ -1,27 +1,11 @@
-# :space_invader: React Native Template TypeScript
+# :space_invader: React Native Template TypeScript (Updated)
 
-<p>
-  <a href="https://travis-ci.org/react-native-community/react-native-template-typescript">
-    <img alt="Build Status" src="https://img.shields.io/travis/react-native-community/react-native-template-typescript.svg" target="_blank" />
-  </a>
-  <a href="https://github.com/react-native-community/react-native-template-typescript#readme">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" target="_blank" />
-  </a>
-  <a href="https://github.com/react-native-community/react-native-template-typescript/graphs/commit-activity">
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" target="_blank" />
-  </a>
-  <a href="https://github.com/react-native-community/react-native-template-typescript/blob/master/LICENSE">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" target="_blank" />
-  </a>
-</p>
+This is a fork of the official template for Typescript.
 
-> Clean and minimalist React Native template for a quick start with TypeScript.
-
-## :star: Features
-
-- Elegant usage directly within the [React Native CLI](https://github.com/react-native-community/cli)
-- Consistent with the default React Native template
-- Minimal additional dependencies
+It adds a few customisations to match my personal preferences:
+- a custom prettier config, with husky to format-on-commit
+- a simple project structure organied in feature directories (in `src/`)
+- `react-navigation` installed by default
 
 ## :arrow_forward: Usage
 
@@ -33,24 +17,29 @@ Further information can be found here: https://github.com/react-native-community
 ### `react-native@0.62.0` or higher
 
 ```sh
-npx react-native init MyApp --template react-native-template-typescript
+npx react-native init MyApp --template git://github.com/ushu/react-native-template-typescript.git
 ```
 
-### `react-native@0.61.x`
+### Running the app in development
 
 ```sh
-npx react-native init MyApp --template react-native-template-typescript@6.3.16
+# Start the packager in terminal
+$ yarn start
+# Launch the simulator
+$ yarn react-native run-ios # or run-android
 ```
 
-### `react-native@0.60.x`
+### Troubleshooting
+
+This templace requires the latest `react-native` CLI installed.
+In case of an error, be sure to install the Community CLI globaly:
 
 ```sh
-npx react-native init MyApp --template react-native-template-typescript@6.2.0
+# Uninstall the old CLI package
+$ npm uninstall -g react-native-cli
+# Install the new "Community" CLI
+$ yarn global add @react-native-community/cli
 ```
-
-## :computer: Contributing
-
-Contributions are very welcome. Please check out the [contributing document](CONTRIBUTING.md).
 
 ## :bookmark: License
 
