@@ -1,11 +1,8 @@
 {
   "name": "@ushu/react-native-template-typescript",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A modified version of react-native-template-typescript.",
-  "scripts": {
-    "prepublishOnly": "npm --no-git-tag-version version $TRAVIS_TAG"
-  },
   "files": [
     "template",
     "template.config.js"
@@ -21,7 +18,7 @@
     "template",
     "boilerplate"
   ],
-  "author": "Emin Khateeb <emin@emin.ch>",
+  "author": "Aurélien Noce <aurelien@noce.fr>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ushu/react-native-template-typescript/issues"
